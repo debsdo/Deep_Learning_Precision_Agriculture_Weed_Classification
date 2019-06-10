@@ -120,7 +120,7 @@ new_model.compile(loss='categorical_crossentropy',
 
 # In[14]:
 
-filepath = '/checkpt/checkpt_inception_resnetV2-{epoch:02d}-{val_acc:.2f}.hdf5'
+filepath = 'checkpt/checkpt_inception_resnetV2-{epoch:02d}-{val_acc:.2f}.hdf5'
 checkpoint = ModelCheckpoint(filepath, monitor = 'val_acc', verbose = 1, save_best_only = True, mode = 'max')
 
 # In[15]:
